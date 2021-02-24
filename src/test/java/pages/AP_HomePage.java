@@ -21,6 +21,10 @@ public class AP_HomePage {
 	public WebElement search_Button;
 	
 	
+	@FindBy(xpath = "//div[@id='block_top_menu']/ul/li[2]")
+	public WebElement dresses_button;
+	
+	
 	
 	
 	

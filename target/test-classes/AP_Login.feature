@@ -59,5 +59,3 @@ Scenario: Create/register an account successfully (practice way to write scenari
 	And User clicks on Register button 
 	Then User should successfully be landed on My Account page 
 	
-	
-	

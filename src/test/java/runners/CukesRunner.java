@@ -11,13 +11,14 @@ import cucumber.api.junit.Cucumber;
 		plugin = {
 				"pretty", 
 				"html:target/default-cucumber-reports",
-				"json:target/cucumber.json"
+				"json:target/cucumber.json",
+				"cucumberSendSlack:channel: 'test-results-channel', json: 'target/test-results.json'"
 		}, 
 		
 		features = "src/test/resources", 
 		glue = "step_definitions",
 		dryRun = false,
-		tags = "@practice_scenario_outline"
+		tags = "@Testing"
 		
 
 )

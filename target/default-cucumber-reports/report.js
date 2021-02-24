@@ -1,63 +1,9 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/AP_Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/AP_verifyDressesPageFeatures.feature");
 formatter.feature({
-  "name": "Verify Login/Sign up functionalities",
+  "name": "Verify Dresses page elements and buttons",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Create/register four accounts successfully",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@practice_scenario_outline"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enters \"\u003cemail_address\u003e\" in email Address Text Box",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "email_address"
-      ]
-    },
-    {
-      "cells": [
-        "park@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "sim@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "me@gmail.com"
-      ]
-    },
-    {
-      "cells": [
-        "moose@gmail.com"
-      ]
-    }
-  ]
-});
 formatter.background({
   "name": "",
   "description": "",
@@ -76,389 +22,38 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "User clicks on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters \"mustakil@gmail.com\" in Email Address Text Box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_Email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "Create/register four accounts successfully",
+  "name": "Verify thre Subcategory buttons",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@practice_scenario_outline"
+      "name": "@Testing"
     }
   ]
 });
 formatter.step({
-  "name": "User enters \"park@gmail.com\" in email Address Text Box",
+  "name": "user clicks on dresses",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_email_Address_Text_Box(String)"
+  "location": "AP_verifyDressesPageFeatures.user_clicks_on_dresses()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[yello Dres]s\u003e but was:\u003c[Dresse]s\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat step_definitions.AP_verifyDressesPageFeatures.user_clicks_on_dresses(AP_verifyDressesPageFeatures.java:28)\n\tat ✽.user clicks on dresses(src/test/resources/AP_verifyDressesPageFeatures.feature:9)\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
+  "name": "successfully verifies three sub category buttons exist",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
+  "location": "AP_verifyDressesPageFeatures.successfully_verifies_three_sub_category_buttons_exist()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is already on automation practice homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_is_already_on_automation_practice_homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters \"mustakil@gmail.com\" in Email Address Text Box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_Email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Create/register four accounts successfully",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@practice_scenario_outline"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enters \"sim@gmail.com\" in email Address Text Box",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is already on automation practice homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_is_already_on_automation_practice_homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters \"mustakil@gmail.com\" in Email Address Text Box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_Email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Create/register four accounts successfully",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@practice_scenario_outline"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enters \"me@gmail.com\" in email Address Text Box",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is already on automation practice homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_is_already_on_automation_practice_homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User enters \"mustakil@gmail.com\" in Email Address Text Box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_Email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Create/register four accounts successfully",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@practice_scenario_outline"
-    }
-  ]
-});
-formatter.step({
-  "name": "User enters \"moose@gmail.com\" in email Address Text Box",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_enters_in_email_Address_Text_Box(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Create an Account button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_clicks_on_Create_an_Account_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should be on Create an Account Page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AP_Login_StepDefinition.user_should_be_on_Create_an_Account_Page()"
-});
-formatter.result({
-  "status": "passed"
-});
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
