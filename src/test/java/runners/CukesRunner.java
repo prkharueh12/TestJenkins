@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 				"pretty", 
 				"html:target/default-cucumber-reports",
 				"json:target/cucumber.json",
-				"cucumberSendSlack:channel: 'test-results-channel', json: 'target/test-results.json'"
+				
 		}, 
 		
 		features = "src/test/resources", 
