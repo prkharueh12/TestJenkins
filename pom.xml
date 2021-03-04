@@ -58,14 +58,12 @@
 				 
           <includes>
             <include>AP_HomePageSearch_StepDefinition</include>
+            <include>AP_verifyDressesPageFeatures</include>
+            <include>AP_verifyDressesPageFeatures.feature</include>
     
           </includes>
           
-          
-          
-          
-          
-          
+       
 				</configuration>
 			</plugin>
 			<plugin>
